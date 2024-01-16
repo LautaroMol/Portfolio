@@ -1,7 +1,7 @@
-
 .about-me-content {
     text-align: center;
-    color: #fff; 
+    color: #a0a0a0;
+    text-shadow: 2px 2px 2px #404040;
   }
   
   .about-me-content h1 {
@@ -20,7 +20,50 @@
     margin: 0 auto;
     line-height: 1.5;
   }
+  
   :host {
     background: none;
   }
+  
+  .Languages fa-icon {
+    margin-left: 30px;
+    font-size: 4em;
+    margin-top: 5px;
+    color: #8d8c8e;
+    animation: pulse 3s infinite; 
+  }
+  
+  @keyframes pulse {
+    0% {
+      filter: brightness(1);
+    }
+  
+    50% {
+      filter: brightness(1.5);
+    }
+  
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+  .Languages {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+  }
+  
+  .language {
+    text-align: center;
+    transition: filter 0.3s ease-in-out;
+    animation: pulse 3s infinite; 
+  }
+  
+  .language-icon {
+    width: 4em;
+    height: auto;
+    opacity: 0.7;
+    transition: filter 0.3s ease-in-out;
+  }
+
   

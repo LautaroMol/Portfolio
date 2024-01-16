@@ -31,11 +31,8 @@ body, html {
 .circle {
   position: absolute;
   display: block;
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
   bottom: -150px;
-  animation: animate 25s linear infinite;
 }
 
 .circle:nth-child(1) {
@@ -61,8 +58,10 @@ body, html {
   }
 
   100% {
-    transform: translateY(-1000px) rotate(720deg);
+    left: calc(100% + 20px);
+    transform: translateY(-800px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }
+
 }
