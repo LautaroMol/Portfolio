@@ -1,3 +1,26 @@
-.h1{
-    font-size: xx-large;
-}
+
+.about-me-content {
+    text-align: center;
+    color: #fff; 
+  }
+  
+  .about-me-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .about-me-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-content p {
+    font-size: 1em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  :host {
+    background: none;
+  }
+  

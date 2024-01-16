@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,22 +13,28 @@
 </head>
 
 <body class="mat-typography">
-  <div class="area">
-    <ul class="circles" id="circles-container"></ul>
-  </div>
+  <div class="circles-container" id="circles-container"></div>
   <div class="content-container">
-    <app-root></app-root>
-    <app-about-me></app-about-me>
+    <app-sidebar></app-sidebar>
+    <div class="container" id="app-root">
+      <app-root></app-root>
+    </div>
+    <div class="container" id="app-about-me">
+      <app-about-me></app-about-me>
+    </div>
   </div>
 
   <script>
+    const numberOfCircles = 25;
     const circlesContainer = document.getElementById('circles-container');
-    const numberOfCircles = 10;
 
-    for (let i = 0; i < numberOfCircles; i++) {
-      const circle = document.createElement('li');
-      circlesContainer.appendChild(circle);
-    }
+    document.addEventListener("DOMContentLoaded", () => {
+      for (let i = 0; i < numberOfCircles; i++) {
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+        circlesContainer.appendChild(circle);
+      }
+    });
   </script>
 </body>
 
