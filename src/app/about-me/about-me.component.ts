@@ -7,6 +7,8 @@ import { faGit } from '@fortawesome/free-brands-svg-icons';
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'app-about-me',
@@ -24,4 +26,5 @@ export class AboutMeComponent {
   faBootstrap = faBootstrap;
   faHtml5 = faHtml5;
   faCss3 = faCss3;
+  faJs = faJs;
 }
