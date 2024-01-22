@@ -3,7 +3,7 @@
 }
 
 .contact {
-    margin-left: -10%;
+    margin-left: 10%;
     font-size: 20em;
     animation: pulse 3s infinite; 
     color: #3a3a3a;
@@ -17,7 +17,11 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #8d8c8e;
+}
 .contact-right{
     display: flex;
     flex-direction: column;
