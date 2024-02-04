@@ -5,7 +5,7 @@ import { AboutMeComponent } from './app/about-me/about-me.component';
 import { SidebarComponent } from './app/sidebar/sidebar.component';
 import { SamplesComponent } from './app/samples/samples.component';
 import { ContactComponent } from './app/contact/contact.component';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
