@@ -52,18 +52,20 @@
     align-items: center;
     align-items: baseline;
   }
-  
   .language {
-    text-align: center;
-    transition: filter 0.3s ease-in-out;
-    animation: pulse 3s infinite; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
   
   .language-icon {
-    width: 4em;
-    height: auto;
-    opacity: 0.7;
-    transition: filter 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
   }
-
+  
+  .language-icon-csharp {
+    width: 60px; 
+    height: 60px;
+  }
   
