@@ -1,7 +1,11 @@
-<nav class="sidebar">
+<button *ngIf="isMobile" class="sidebar-toggle" [class.visible]="sidebarVisible" (click)="toggleSidebar()">
+  <fa-icon [icon]="sidebarVisible ? faTimes : faBars"></fa-icon>
+</button>
+
+<nav class="sidebar" [class.visible]="sidebarVisible">
     <fa-icon [icon]="faCirclePlay" (click)="play()" ></fa-icon>
-    <button (click)="scrollToSection('app-root')">Presentacion</button>
-    <button (click)="scrollToSection('app-about-me')">Sobre mi</button>
-    <button (click)="scrollToSection('app-samples')">Algunos trabajos mios</button>
-    <button (click)="scrollToSection('app-contact')">Contactame</button>
+    <button (click)="scrollToSection('presentation')">Presentacion</button>
+    <button (click)="scrollToSection('about-me')">Tecnologias</button>
+    <button (click)="scrollToSection('samples')">Algunos trabajos mios</button>
+    <button (click)="scrollToSection('contact')">Contactame</button>
 </nav>

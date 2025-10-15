@@ -9,13 +9,5 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
-bootstrapApplication(AboutMeComponent, appConfig)
-  .catch((err) => console.error(err));
 
-bootstrapApplication(SidebarComponent, appConfig)
-  .catch((err) => console.error(err));
-  bootstrapApplication(SamplesComponent, appConfig)
-  .catch((err) => console.error(err));
-  bootstrapApplication(ContactComponent, appConfig)
-  .catch((err) => console.error(err));
   

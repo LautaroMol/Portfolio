@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faAngular } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGit } from '@fortawesome/free-brands-svg-icons';
-import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-
+import { faAngular, faDocker, faLinux, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faServer, faMobileAlt, faCode, faPalette } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-about-me',
@@ -18,13 +11,14 @@ import { faJs } from '@fortawesome/free-brands-svg-icons';
   styleUrl: './about-me.component.css'
 })
 export class AboutMeComponent {
-
-  faAngular = faAngular;
   faDatabase = faDatabase;
-  faGithub = faGithub;
-  faGit = faGit;
-  faBootstrap = faBootstrap;
-  faHtml5 = faHtml5;
-  faCss3 = faCss3;
-  faJs = faJs;
+  faCode = faCode;
+  faMicrosoft = faMicrosoft;
+  faAngular = faAngular;
+  faMobileAlt = faMobileAlt;
+  faPalette = faPalette; // Using faPalette for Tailwind, as a design-related icon
+  faLinux = faLinux;
+  faDocker = faDocker;
+  faServer = faServer;
+
 }

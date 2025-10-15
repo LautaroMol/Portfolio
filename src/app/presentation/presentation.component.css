@@ -13,8 +13,8 @@
   
   .text-container {
     margin-left: 20px;
+    max-width: 1000px;
   }
-  .text-container
   
   .title, .subtitle {
     opacity: 0;
